@@ -98,3 +98,19 @@ Runtime Error
 [0m09:56:27.066902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114626d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144e32f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144a3ac0>]}
 [0m09:56:27.067074 [debug] [MainThread]: Flushing usage events
 [0m09:56:30.011582 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:33:50.953520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103b3f0e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051474d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105147610>]}
+
+
+============================== 19:33:50.956377 | 31fc9c29-6bc0-4456-a363-4f5c4e91f515 ==============================
+[0m19:33:50.956377 [info ] [MainThread]: Running with dbt=1.11.2
+[0m19:33:50.956666 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'invocation_command': 'dbt test', 'introspect': 'True', 'no_print': 'None', 'warn_error': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'partial_parse': 'True', 'log_path': 'logs', 'quiet': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'write_json': 'True', 'empty': 'None', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'printer_width': '80', 'profiles_dir': '/Users/pictus/.dbt', 'log_cache_events': 'False', 'indirect_selection': 'eager'}
+[0m19:33:50.956950 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/pictus/Desktop/learn-dbt/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:33:50.958980 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.04562546, "process_in_blocks": "0", "process_kernel_time": 0.137912, "process_mem_max_rss": "108167168", "process_out_blocks": "0", "process_user_time": 0.649508}
+[0m19:33:50.959218 [debug] [MainThread]: Command `dbt test` failed at 19:33:50.959166 after 0.05 seconds
+[0m19:33:50.959373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10514ad70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050032f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fc7ac0>]}
+[0m19:33:50.959527 [debug] [MainThread]: Flushing usage events
+[0m19:33:52.113915 [debug] [MainThread]: An error was encountered while trying to flush usage events
