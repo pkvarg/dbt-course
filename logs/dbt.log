@@ -114,3 +114,19 @@ Runtime Error
 [0m19:33:50.959373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10514ad70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050032f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fc7ac0>]}
 [0m19:33:50.959527 [debug] [MainThread]: Flushing usage events
 [0m19:33:52.113915 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:22:37.771398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a170e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090234d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109023610>]}
+
+
+============================== 08:22:37.774066 | a6cdd403-309e-486b-8fe5-7a544e683061 ==============================
+[0m08:22:37.774066 [info ] [MainThread]: Running with dbt=1.11.2
+[0m08:22:37.774354 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'printer_width': '80', 'debug': 'False', 'version_check': 'True', 'write_json': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'empty': 'False', 'use_experimental_parser': 'False', 'static_parser': 'True', 'target_path': 'None', 'partial_parse': 'True', 'introspect': 'True', 'no_print': 'None', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'use_colors': 'True', 'log_cache_events': 'False', 'profiles_dir': '/Users/pictus/.dbt', 'invocation_command': "dbt compile --inline {{ select_positive_values('dim_listings_cleansed', 'price') }}"}
+[0m08:22:37.774644 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/pictus/Desktop/learn-dbt/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m08:22:37.776543 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.04359275, "process_in_blocks": "0", "process_kernel_time": 0.139416, "process_mem_max_rss": "107954176", "process_out_blocks": "0", "process_user_time": 0.652638}
+[0m08:22:37.776764 [debug] [MainThread]: Command `dbt compile` failed at 08:22:37.776724 after 0.04 seconds
+[0m08:22:37.776913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109026d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108edf2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ea3ac0>]}
+[0m08:22:37.777057 [debug] [MainThread]: Flushing usage events
+[0m08:22:38.577417 [debug] [MainThread]: An error was encountered while trying to flush usage events
