@@ -2,6 +2,9 @@
 
 source .venv/bin/activate
 
+preset dahsboard:
+https://823b7b9c.us1a.app.preset.io/superset/dashboard/8/?edit=true&native_filters_key=8iT-APwjOhw
+
 # Good to know
 
 dbt run --full-refresh
